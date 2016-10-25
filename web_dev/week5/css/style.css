@@ -1,0 +1,278 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family:  arial, sans-serif;
+    text-align: justify;
+    
+}
+
+
+
+h1 {
+  text-align: center; 
+}
+
+.wrapper {
+  
+  width: 85%;
+  display:table;
+  margin: 0 auto;
+  background: linear-gradient(#ffffff, #e8e8e4 99%);
+   text-align: justify;
+  
+}
+
+.row {
+    content: "";
+    clear: both;
+    display: block;
+             
+ }
+.blue{
+  
+  background-color: blue;
+}
+
+
+
+[class*='col-'] {
+  float: left;
+  padding-right: 25px;
+  border: 1px solid red;
+}
+
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+
+
+
+
+.offset-1 {
+  
+  margin-left: 6.25%;
+}
+
+
+.col-1 {
+  width: 6.25%;
+  
+}
+
+.offset-2 {
+  
+  margin-left: 12.5%;
+}
+
+
+
+.col-2  {
+  wdith: 12.5%;
+}
+
+.col-3 {
+ width: 18.75%;
+}
+
+
+.offset-4 {
+  margin-left: 25%;
+}
+.col-4 {
+  
+  width: 25%;
+}
+
+.offset-5 {
+  margin-left: 31.25%;
+}
+col-5 {
+  
+  width: 31.25%;
+}
+
+
+.offset-6 {
+  margin-left: 37.5%;
+}
+
+
+.col-6 {
+  width:37.5%;
+}
+
+.col-7 {
+  width: 43.75%;;
+}
+
+.col-8 {
+  
+  width: 50%;
+}
+
+.col-9 {
+  width: 56.25%;
+}
+
+.col-10 {
+    
+  width: 65.5%;
+  
+}
+.col-11 {
+  
+  width: 68.75;
+}
+
+.col-12 {
+  
+  width: 75%;
+}
+
+.col-13 {
+  
+ width: 81.25%;
+}
+
+.col-14 {
+ width: 87.5
+}
+
+.col-15{
+  width:93.75%;
+}
+
+.col-16 {
+  width:100%;
+
+}
+
+
+/***** website *****/
+
+.base-section {
+  
+  margin-top: 400px;
+  
+}
+
+.image_border {
+     box-shadow: 5px 5px 5px  #888888; 
+     float: left;
+}
+
+h2 { 
+    
+    text-align: center;
+    
+    
+}
+
+.sub_heading{
+    border-bottom: 5px solid #ff8b38;
+
+}
+
+
+p {
+    color: #86878b;
+    text-align: justify;
+    font-size: 12px;
+    
+}
+
+@media all and (max-width:650px){
+  h3 {  
+         text-align: center;
+     
+      }  
+  
+  .offset-1 {
+      margin: 0%;
+  }
+  
+  .offset-2{
+      margin: 0%;
+  }
+
+}
+    
+.nav ul li{
+  display: inline;
+  margin-left: 10px;
+}
+
+   /* this would be suitable for iPads */
+    @media (max-width : 768px) {
+
+    body {
+		background-color:blue;
+		margin:auto;
+		width:100%;
+	}
+		.wrapper {  width: 98%;}	
+		.offset-1 {margin: 0%;}
+		.col-6, .col-7, .col-8,.col-9,.col-10,.col-11 {
+    width: 100%;
+	padding:2%;}
+
+
+		
+	.col-1, .col-2, .col-3,.col-4, .col-5{
+	width: 33%;
+	padding: 2%;}
+	
+	.nav {display: block; }
+	
+	h3{    
+		text-align: center;}
+		
+	.image_border {
+		box-shadow: none; 
+		width:100%;
+		max-height:302px;
+	}
+	
+}
+   /* this would be suitable for other tablets */
+    @media (max-width : 732px) {
+
+	}	
+		.offset-2 {margin: 0%;}
+	}	
+	
+	
+
+	   /* this would be suitable for phones  */
+    @media (max-width : 480px) {
+
+		body {background-color:aqua;}
+
+		
+		.col-1, .col-2, .col-3, .col-4 {
+			width: 100%;
+		padding: 2%;}
+			
+			
+		h2 {font-size: 1.2em;
+			margin: 2px;
+			padding: 2px;}
+			
+		h3 {font-size: 1em;
+			line-height: 1.05em;
+			margin: 2px;
+			padding: 2px;}
+		
+		.nav {display: none; }
+		
+		.image_border {
+				box-shadow: none; 
+				max-width:100%;
+			}
+		[class*='col-']:last-of-type {
+    padding-right: 2%;}
+			
+	}
